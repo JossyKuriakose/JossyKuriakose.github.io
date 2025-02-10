@@ -1,1 +1,1 @@
-# JossyKuriakose.github.io
+# JossyKuriakose.com
