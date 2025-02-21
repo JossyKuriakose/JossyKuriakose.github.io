@@ -14,23 +14,13 @@
             <li><a href="bucketlist.html">Bucket List</a></li>
         </ul>
     </nav>
+    <link rel="stylesheet" href="common_styles.css">
     <style>
-        nav ul{
-            display:flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        nav ul li:hover{
-            background-color: #FFB300;            
-        }
-        nav ul li:active{
-            background-color:rgb(146, 222, 32);
-        }
-        footer {
-            font-size: small;
-        }
         #indent{
             text-indent: 20px;
+        }
+        .changeover{
+            display:flex;
         }
     </style>
 </head>
@@ -84,7 +74,7 @@
 
         <article>
            <h2>Activities Jossy Must Do</h2>
-           <ol>
+           <ol class = "changeover">
              <li>Jetskiing</li>
              <li>Rockclimbing on an actual mountain</li>
              <li>Paragliding</li>

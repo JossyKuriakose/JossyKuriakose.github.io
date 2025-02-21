@@ -1,0 +1,14 @@
+nav ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+nav ul li:hover{
+    background-color: #FFB300;            
+}
+nav ul li.active{
+    background-color:rgb(146, 222, 32);
+}
+footer {
+    font-size: small;
+}

@@ -14,41 +14,34 @@
             <li><a href="bucketlist.html">Bucket List</a></li>
         </ul>
     </nav>
+    <link rel="stylesheet" href="common_styles.css">
     <style>
-        nav ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-
-        nav ul li:hover {
-            background-color: #FFB300;
-        }
-
-        nav ul li:active {
-            background-color: rgb(146, 222, 32);
-        }
-
-        footer {
-            font-size: small;
-        }
-
         #purplebox {
             border: 2px solid purple;
             width: 500px;
-            display:flex;
+            display: flex;
             flex-direction: row;
             justify-content: space-around;
         }
 
         #redbox {
             border: 2px solid red;
-            width: 350px;
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
         }
 
         img.check {
             width: 100px;
             height: 100px;
+            margin-top: 35px;
+        }
+
+        img.look {
+            width: 140px;
+            height: 140px;
+            margin-top: 35px;
         }
     </style>
 </head>
@@ -71,17 +64,26 @@
             <img src="checkmark.png" alt="checkmarkimage" class="check">
         </section>
         <p></p>
-        <article id="redbox">
-            <h2><strong><em>Plans for the Future</em></strong></h2>
-            <ol>
-                <li>Get a job after graduation</li>
-                <li>Build an investment portfolio</li>
-                <li>Pay off student loan debt</li>
-                <li>Own a house by the age of 30</li>
-                <li>Have a $1 million by the age of 35</li>
-                <li>Buy the motorcycle: Honda Rebel 500</li>
-            </ol>
-        </article>
+        <section id="redbox">
+            <article>
+                <h2><strong><em>Plans for the Future</em></strong></h2>
+                <ol>
+                    <li>Get a job after graduation</li>
+                    <li>Build an investment portfolio</li>
+                    <ul>
+                        <li>S&P 500</li>
+                        <li>Blue-chip stock</li>
+                        <li>Mutual Fund</li>
+                        <li>Crypto</li>
+                    </ul>
+                    <li>Pay off student loan debt</li>
+                    <li>Own a house by the age of 30</li>
+                    <li>Have a $1 million by the age of 35</li>
+                    <li>Buy the motorcycle: Honda Rebel 500</li>
+                </ol>
+            </article>
+            <img src="lookingoutward.jpg" alt="future" class="look">
+        </section>
     </main>
 </body>
 <footer id="second">

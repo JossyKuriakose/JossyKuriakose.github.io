@@ -6,6 +6,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Jossy Kuriakose</title>
+    <link rel="stylesheet" href="common_styles.css">
+    <style>
+        img.resize{
+            width:600px;
+            height:300px;
+        }
+        .movearound{
+            display: flex;
+        }
+    </style>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -14,70 +24,18 @@
             <li><a href="bucketlist.html">Bucket List</a></li>
         </ul>
     </nav>
-    <!--
-    <style>
-        #important {
-            background-color: lightblue;
-        }
-
-        #second #one {
-            background-color: lightcyan;
-        }
-
-        article {
-            background-color: #FFECB3;
-            font-weight: 16px;
-            color: #333;
-        }
-
-        article .featured {
-            background-color: #FFD54F;
-            font-weight: bold;
-            border: 2px solid #FFA000;
-        }
-
-        article p {
-            line-height: 1.5px;
-            font-style: italic;
-        }
-
-        body .featured:hover {
-            background-color: #FFB300;
-        }
-    </style>
-   -->
-    <style>
-        nav ul{
-            display:flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        nav ul li:hover{
-            background-color: #FFB300;            
-        }
-        nav ul li.active{
-            background-color:rgb(146, 222, 32);
-        }
-        footer {
-            font-size: small;
-        }
-        img.resize{
-            width:600px;
-            height:300px;
-        }
-    </style>
 </head>
 
 <body>
     <article id="important">
         <h1>Jossy Kuriakose</h1>
-        <img src = "Screenshot 2025-02-20 174103.png" alt = "Jossy's image">
-        <img src = "og-default (1).jpg" alt = "Siena College" class = "resize">
+        <img src = "pictureofme.png" alt = "Jossy's image">
+        <img src = "sienacollege.jpg" alt = "Siena College" class = "resize">
     </article>
     <main>
         <article>
             <h2><strong><em>Who is Jossy?</em></strong></h2>
-            <ol>
+            <ol class = "movearound">
                 <li class="featured">College/University: Siena College</li>
                 <li>Status: Senior</li>
                 <li>Hometown: Guilderland, NY</li>
