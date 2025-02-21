@@ -15,27 +15,40 @@
         </ul>
     </nav>
     <style>
-        nav ul{
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        nav ul li:hover {
+            background-color: #FFB300;
+        }
+
+        nav ul li:active {
+            background-color: rgb(146, 222, 32);
+        }
+
+        footer {
+            font-size: small;
+        }
+
+        #purplebox {
+            border: 2px solid purple;
+            width: 500px;
             display:flex;
             flex-direction: row;
             justify-content: space-around;
         }
-        nav ul li:hover{
-            background-color: #FFB300;            
+
+        #redbox {
+            border: 2px solid red;
+            width: 350px;
         }
-        nav ul li:active{
-            background-color:rgb(146, 222, 32);
-        }
-        footer {
-            font-size: small;
-        }
-        #purplebox{
-            border: 2px solid purple;
-            width:350px;
-        }
-        #redbox{
-            border: 2px solid purple;
-            width:350px;
+
+        img.check {
+            width: 100px;
+            height: 100px;
         }
     </style>
 </head>
@@ -45,17 +58,20 @@
         <h1>Jossy Kuriakose</h1>
     </article>
     <main>
-        <article id = "purplebox">
-            <h2><strong><em>Things I done in my life</em></strong></h2>
-            <ol>
-                <li>Snorkling in Cancun</li>
-                <li>Skiing in Canada</li>
-                <li>Visited Montreal</li>
-                <li>Went kayakking in Austin, Texas</li>
-            </ol>
-        </article>
+        <section id="purplebox">
+            <article>
+                <h2><strong><em>Things I done in my life</em></strong></h2>
+                <ol>
+                    <li>Snorkling in Cancun</li>
+                    <li>Skiing in Canada</li>
+                    <li>Visited Montreal</li>
+                    <li>Went kayakking in Austin, Texas</li>
+                </ol>
+            </article>
+            <img src="checkmark.png" alt="checkmarkimage" class="check">
+        </section>
         <p></p>
-        <article id = "redbox">
+        <article id="redbox">
             <h2><strong><em>Plans for the Future</em></strong></h2>
             <ol>
                 <li>Get a job after graduation</li>
@@ -73,7 +89,8 @@
         © 2025 Jossy Kuriakose<br>
         Email: j29kuri@siena.edu<br>
         Phone: (518)313-2612<br>
-        <a href="www.linkedin.com/in/jossykuriakose">LinkedIn</a></p>
+        <a href="www.linkedin.com/in/jossykuriakose">LinkedIn</a>
+    </p>
 </footer>
 
 </html>
