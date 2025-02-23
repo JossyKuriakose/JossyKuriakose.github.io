@@ -1,14 +1,39 @@
-nav ul{
-    display:flex;
+nav ul {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-nav ul li:hover{
-    background-color: #FFB300;            
+
+nav ul li:hover {
+    background-color: #FFB300;
 }
-nav ul li.active{
-    background-color:rgb(146, 222, 32);
+
+nav ul li.active {
+    background-color: rgb(146, 222, 32);
 }
+
 footer {
     font-size: small;
+}
+
+img.resize {
+    width: 600px;
+    height: 300px;
+}
+
+.movearound {
+    display: flex;
+    flex-direction: column;
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+}
+#purplebox {
+    border: 2px solid purple;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

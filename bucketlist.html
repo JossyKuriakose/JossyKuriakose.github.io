@@ -8,12 +8,51 @@
     <title>Jossy Kuriakose</title>
     <link rel="stylesheet" href="common_styles.css">
     <style>
-        .indent{
+        @keyframes magicGlow {
+            0% {
+                text-shadow: 0 0 5px #ff0000, 0 0 10px #ff7300, 0 0 15px #ffeb00;
+            }
+
+            50% {
+                text-shadow: 0 0 10px #00ff00, 0 0 20px #00ffff, 0 0 30px #0080ff;
+            }
+
+            100% {
+                text-shadow: 0 0 5px #ff00ff, 0 0 10px #7300ff, 0 0 15px #ff0080;
+            }
+        }
+
+        .indent {
             text-indent: 20px;
         }
-        .changeover{
-            display:flex;
+
+        .changeover {
+            display: flex;
             flex-direction: column;
+        }
+
+        div p:hover {
+            animation: magicGlow 0.6s infinite alternate;
+        }
+
+        #redbox {
+            border: 2px solid red;
+            width: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        #greenbox {
+            border: 2px solid green;
+            width: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        #purplebox{
+            width:800px;
         }
     </style>
 </head>
@@ -31,57 +70,61 @@
         <h1>Things Jossy wishes to do</h1>
     </article>
     <main>
-        <article>
+        <article id = "redbox">
             <h2><strong>Places to visit</strong></h2>
-            
-            <div class = "tourabroad">
+
+            <div class="tourabroad">
                 <h3>International Destination</h3>
                 <p>Antartica</p>
-                <p class = "indent">I want to travel to Antartica to see the icy landscape and pet penguins.</p>
+                <p class="indent">I want to travel to Antartica to see the icy landscape and pet penguins.</p>
                 <p>Japan</p>
-                <p class = "indent">I want to experience the futuristic technology the country offers.</p>
+                <p class="indent">I want to experience the futuristic technology the country offers.</p>
                 <p>Swizterland</p>
-                <p class = "indent">I want to see historic cities like Zurich and Geneva. I also want to ski there and enjoy the natural landscape.</p>
+                <p class="indent">I want to see historic cities like Zurich and Geneva. I also want to ski there and
+                    enjoy the natural landscape.</p>
                 <p>Italy</p>
-                <p class = "indent">I want to see the historic cities there and witness beautiful coastal towns.</p>
+                <p class="indent">I want to see the historic cities there and witness beautiful coastal towns.</p>
                 <p>South Africa</p>
-                <p class = "indent">I want to see the nature in this country.</p>
+                <p class="indent">I want to see the nature in this country.</p>
                 <p>Egypt</p>
-                <p class = "indent">I want to see the pyramids and other amazing ancient sites.</p>
+                <p class="indent">I want to see the pyramids and other amazing ancient sites.</p>
                 <p>Brazil</p>
-                <p class = "indent">I want to visit the city of Rio.</p>
+                <p class="indent">I want to visit the city of Rio.</p>
             </div>
-
-            <div class = "tourUS">
+        </article>
+        <article id = "purplebox">
+            <div class="tourUS">
                 <h3>Places within the US</h3>
                 <p>Los Angeles</p>
-                <p class = "indent">I want to visit places like venic beach, hollywood, and see the cities palm tree lines streets.</p>
+                <p class="indent">I want to visit places like venic beach, hollywood, and see the cities palm tree lines
+                    streets.</p>
                 <p>Miami</p>
-                <p class = "indent">I only want to visit this city because it looks beautiful.</p>
+                <p class="indent">I only want to visit this city because it looks beautiful.</p>
                 <p>San Francisco</p>
-                <p class = "indent">I want to see this cities history.</p>
+                <p class="indent">I want to see this cities history.</p>
                 <p>Redwood National Park</p>
-                <p class = "indent">I want to see giant redwood trees and hug them.</p>
+                <p class="indent">I want to see giant redwood trees and hug them.</p>
                 <p>Grand Canyon</p>
-                <p class = "indent">Definetely got to ride a helicopter over the grnd canyon.</p>
+                <p class="indent">Definetely got to ride a helicopter over the grnd canyon.</p>
                 <p>Key West</p>
-                <p class = "indent">Key West is beautiful and the beach there is so nice.</p>
+                <p class="indent">Key West is beautiful and the beach there is so nice.</p>
                 <p>Alaska</p>
-                <p class = "indent">Alaska has one of the best nature in America. Alaska is the largest state and many parts of it is unexplored.</p>
+                <p class="indent">Alaska has one of the best nature in America. Alaska is the largest state and many
+                    parts of it is unexplored.</p>
                 <p>West Virginia</p>
-                <p class = "indent">They got nice mountains and national park.</p>
+                <p class="indent">They got nice mountains and national park.</p>
             </div>
         </article>
 
-        <article>
-           <h2>Activities Jossy Must Do</h2>
-           <ol class = "changeover">
-             <li>Jetskiing</li>
-             <li>Rockclimbing on an actual mountain</li>
-             <li>Paragliding</li>
-             <li>Swimming with sharks</li>
-             <li>Petting a lion</li>
-           </ol>
+        <article id = "greenbox">
+            <h2>Activities Jossy Must Do</h2>
+            <ol class="changeover">
+                <li>Jetskiing</li>
+                <li>Rockclimbing on an actual mountain</li>
+                <li>Paragliding</li>
+                <li>Swimming with sharks</li>
+                <li>Petting a lion</li>
+            </ol>
         </article>
     </main>
     <footer id="second">
@@ -89,7 +132,8 @@
             © 2025 Jossy Kuriakose<br>
             Email: j29kuri@siena.edu<br>
             Phone: (518)313-2612<br>
-            <a href="www.linkedin.com/in/jossykuriakose">LinkedIn</a></p>
+            <a href="www.linkedin.com/in/jossykuriakose">LinkedIn</a>
+        </p>
     </footer>
 </body>
 
