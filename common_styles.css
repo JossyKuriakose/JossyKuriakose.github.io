@@ -37,3 +37,7 @@ img.resize {
     flex-direction: row;
     justify-content: space-around;
 }
+nav ul li:sele {
+    background-color: #ff9800;
+    font-weight: bold;
+}
