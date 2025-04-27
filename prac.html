@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        form[name="buttons"] {
+            background-color: azure;
+        }
+
+        input[name="buttons"] {
+            display:flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        input[name="GPU"]{
+            display:flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Parts for gaming PC</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th style="color:red;">Price</th>
+                <th style="font-style: italic;">Compatibility</th>
+                <th style="text-decoration: dashed;">Looks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th style="font-size:50px;">CPU</th>
+                <td>$200</td>
+                <td>YES</td>
+                <td>Average</td>
+            </tr>
+            <tr>
+                <th>GPU</th>
+                <td>$460</td>
+                <td>YES</td>
+                <td>Sexy</td>
+            </tr>
+            <tr>
+                <th>SSD</th>
+                <td>$110</td>
+                <td>YES</td>
+                <td>Decent</td>
+            </tr>
+            <tr>
+                <th>RAM</th>
+                <td>$100</td>
+                <td>NO</td>
+                <td>Nice</td>
+            </tr>
+
+            <tr>
+                <th>PC Cover</th>
+
+            </tr>
+            <tr>
+                <th>Motherboard</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>RGB Fans</th>
+        </tfoot>
+    </table>
+
+    <p>Hello my name is <u>Jossy Kuriakose</u></p>
+    <p>I currently attend <mark>Siena College</mark></p>
+    <p>I like <mark>pasta with alfredo</mark></p>
+    <blockquote>You reap what you sow</blockquote>
+    <blockquote>There are no pure good guys or bad guys but most people are in some sort of gray area</blockquote>
+    <span>What does this do?</span>
+    <del>I like CS</del>
+    <p>I like to <del>not</del> travel</p>
+    <address>j29kuri@siena.edu</address>
+
+    <form>
+        <label>What is your status in Siena College?</label>
+        <br>
+        <input type="radio" name="status" value="Freshman">
+        <label for="Freshman">Freshman</label>
+        <br>
+        <input type="radio" name="status" value="Sophmore">
+        <label for="Sophmore">Sophmore</label>
+        <br>
+        <input type="radio" name="status" value="Junior">
+        <label for="Junior">Junior</label>
+        <br>
+        <input type="radio" name="status" value="Senior">
+        <label for="Senior">Senior</label>
+    </form>
+
+    <form>
+        <label>Where are you from?</label>
+        <br>
+        <input type="radio" name="hometown" value="Albany">
+        <label for="Albany">Albany</label>
+        <br>
+        <input type="radio" name="hometown" value="Saratoga">
+        <label for="Saratoga">Saratoga</label>
+        <br>
+        <input type="radio" name="hometown" value="Schenectady">
+        <label for="Schenectady">Schenectady</label>
+        <br>
+        <input type="radio" name="hometown" value="Elsewhere">
+        <label for="Elsewhere">Elsewhere</label>
+    </form>
+
+    <form>
+        <label for="name">What is your name?</label>
+        <br>
+        <input type="text" name="quality" style="height:20px">
+    </form>
+
+    <form>
+        <label for="ways">Ways to play video games</label>
+        <select id="ways" name="ways">
+            <option value="Gaming PC">Gaming PC</option>
+            <option value="XBox Series">XBox Series</option>
+            <option value="PS5">Play Station 5</option>
+            <option value="switch">Nintendo Switch</option>
+        </select>
+        <input type="submit" value="Use this method">
+    </form>
+
+    <form>
+        <label for="info">Tell us something about yourself!</label>
+        <br>
+        <textarea style="width: 200px; height:150px"></textarea>
+    </form>
+
+    <form>
+        <input type="button" name="buttons" value="NZXT" style="color:red; background-color:aqua">
+        <input type="button" name="buttons" value="Corsair" style="color:blue; background-color:aqua">
+        <input type="button" name="buttons" value="Cyberpower" style="color:brown; background-color: aqua;">
+    </form>
+
+    <form>
+        <label>Pick which GPU brand is the best</label>
+        <label for = "brand1">AMD</label>
+        <input type = "checkbox" id = "brand1" name = "GPU" value = "amd" checked>
+
+        <label for = "brand2">Intel</label>
+        <input type = "checkbox" id = "brand2" name = "GPU" value = "intel">
+
+        <label for = "brand3">Nvidia</label>
+        <input type = "checkbox" id = "brand3" name = "GPU" value = "nvidia">
+    </form>
+
+    <script>
+        // Get all elements with name="buttons"
+        let buttons = document.getElementsByName("buttons");
+
+        // Loop through each button and attach a click event listener
+        buttons.forEach((button, index) => {
+            button.addEventListener("click", function () {
+                if (index === 0) {
+                    document.body.style.backgroundColor = "red";
+                } else if (index === 1) {
+                    document.body.style.backgroundColor = "blue";
+                }
+                  else if (index === 2) {
+                    document.body.style.backgroundColor = "green";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
