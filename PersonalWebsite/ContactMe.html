@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Jossy Kuriakose</title>
+    <link rel="stylesheet" href="universal.css">
+    <style>
+    
+     div{
+        background-color: #F5F5DC;
+        padding: 10px;
+        border: 1px solid black;
+     }
+
+     section{
+        display:flex;
+        flex-direction: row;
+        margin-left: 250px;
+        margin-top: 50px;
+        gap: 150px;
+     }
+
+     p{
+        font-size: 20px;
+     }
+
+     #email{
+       height: 40px;
+       margin-top:70px;
+       padding-top: 0px;
+     }
+
+     #message{
+       height: 20px;
+       margin-top:50px;
+       padding:5px;
+       font-size: 20px;
+     }
+    </style>
+</head>
+
+<body>
+
+    <article id="important">
+        <h1>Jossy Kuriakose</h1>
+    </article>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Project.html">Project</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="ContactMe.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+      <section>
+            <img src = "phone.png" alt = "Phone" width = "150px" height = "150px">
+        <div>
+            <p><strong>Home:</strong> (518) 333-3333</p>
+            <p><strong>Work:</strong> (518) 333-3333</p>
+            <p><strong>Cell:</strong> (518) 333-3333</p>
+        </div>
+      </section>
+
+      <section>
+        <img src = "gmail.jpg" alt = "Email" width = "150px" height = "150px">
+        <div id = "email">
+            <p><strong>Email:</strong> jossy.kuriakose1@gmail.com</p>
+        </div>
+      </section>
+
+      <section>
+        <a href = "MessageMe.html"><img src = "chat.png" alt = "Chat" width = "150px" height = "150px"></a>
+        <div id = "message" style = "width: 200px"><a href = "MessageMe.html">Message Me Now!</a></div>
+      </section>
+    </main>
+    <script>
+        // Get current page file name (e.g., "Home.html")
+        const currentPage = location.pathname.split("/").pop();
+      
+        // Get all nav links
+        const navLinks = document.querySelectorAll("nav a");
+      
+        navLinks.forEach(link => {
+          if (link.getAttribute("href") === currentPage) {
+            link.style.textDecoration = "underline";
+            link.style.fontWeight = "bold"; // optional for emphasis
+          }
+        });
+      </script>
+      
+</body>
+
+</html>

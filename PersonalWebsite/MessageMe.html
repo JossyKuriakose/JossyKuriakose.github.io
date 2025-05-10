@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Chat Page</title>
+    <link rel="stylesheet" href="universal.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .chat-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: auto;
+            border: 1px solid #ccc;
+            background: white;
+            min-height: 300px;
+            border-radius:20px;
+        }
+
+        .chat-header {
+            padding: 15px;
+            background: #F5F5DC;
+            color: black;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+            background: #f9f9f9;
+        }
+
+        .chat-message {
+            margin-bottom: 10px;
+        }
+
+        .chat-input {
+            display: flex;
+            border-top: 1px solid #ccc;
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            outline: none;
+        }
+
+        .chat-input button {
+            padding: 10px 20px;
+            background: #F5F5DC;
+            border: none;
+            color: black;
+            cursor: pointer;
+        }
+
+        .chat-input button:hover {
+            background: #0056b3;
+        }
+
+        main{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <article id="important">
+        <h1>Jossy Kuriakose</h1>
+    </article>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Project.html">Project</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="ContactMe.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="chat-container">
+            <div class="chat-header">Message Me!</div>
+            <div class="chat-messages" id="chatMessages"></div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message..." />
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function sendMessage() {
+            const input = document.getElementById('chatInput');
+            const message = input.value.trim();
+            if (message === '') return;
+
+            const messagesDiv = document.getElementById('chatMessages');
+            const messageElement = document.createElement('div');
+            messageElement.className = 'chat-message';
+            messageElement.textContent = message;
+
+            messagesDiv.appendChild(messageElement);
+            input.value = '';
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        // Optional: send message on Enter key press
+        document.getElementById('chatInput').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+
+</html>

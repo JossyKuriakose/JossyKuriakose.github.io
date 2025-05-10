@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Jossy Kuriakose</title>
+    <link rel="stylesheet" href="universal.css">
+    <style>
+    
+     div{
+        border: 2px solid black;
+        width: 400px;
+        height: 340px;
+        padding: 10px;
+        margin-top: 50px;
+        margin-left: 50px;
+        font-size: 25px;
+        background-color: #F7DFFF;
+     }
+
+     img{
+        width: 350px;
+        height: 250px;
+        margin-top: 100px;
+        border: 2px solid black;
+        margin-left:30px;
+     }
+
+     section{
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
+     }
+
+     aside{
+        display:flex; 
+        gap:650px;
+     }
+     aside img{
+        border:none;
+        width: 150px;
+        height: 150px;
+     }
+     #chat{
+        margin-left:50px;
+     }
+    </style>
+</head>
+
+<body>
+
+    <article id="important">
+        <h1>Jossy Kuriakose</h1>
+    </article>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Project.html">Project</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="ContactMe.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+      <section>
+        <div>
+          <p>This project implements Kruskal's Algorithm to find the Minimum Spanning Tree (MST) of a weighted, undirected graph. A Minimum Spanning Tree connects all the vertices in a graph with the least total edge weight and no cycles. The algorithm sorts all edges by weight and adds them one by one, ensuring that no cycles are formed, until all vertices are connected.</p>
+        </div>
+        <img src = "algmap.png" alt = "Algorithm Traverse Map">
+      </section>
+      <aside>
+      <a href = "MessageMe.html"><img src = "chat.png" alt = "Chat Box" width = "70px" height = "60px" id = "chat"></a>
+      <img src="download.jpg" alt="Download Button" width = "60px" height = "60px" id="download">  
+      </aside>  
+    </main>
+</body>
+
+</html>
